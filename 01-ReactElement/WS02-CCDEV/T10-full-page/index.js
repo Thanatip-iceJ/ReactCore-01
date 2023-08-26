@@ -12,29 +12,21 @@ const img = React.createElement('img',
 })
 const imgDiv = React.createElement('div', {className: 'team_img_wrapper'}, img)
 // #1 React : CreateElement
-const link1 = React.createElement('a', {
-    href: '#',
-    className: 'nav_menu_link'
-}, 'account'
-)
+function aCreator(txt) {
+    const anchorTag = React.createElement('a', 'null', txt)
+    const navEl = React.createElement('li', liAttr, anchorTag)
+    return navEl;
+};
 
-const link2 = React.createElement('a', {
+const liAttr = {
     href: '#',
     className: 'nav_menu_link'
-}, 'about'
-)
+}
 
-const link3 = React.createElement('a', {
-    href: '#',
-    className: 'nav_menu_link'
-}, 'service'
-)
-
-const link4 = React.createElement('a', {
-    href: '#',
-    className: 'nav_menu_link'
-}, 'contact'
-)
+const link1 = aCreator('account')
+const link2 = aCreator('about')
+const link3 = aCreator('service')
+const link4 = aCreator('contact')
 
 const ul = React.createElement('ul', {className: 'nav_menu_link'}, link1, link2, link3, link4)
 
