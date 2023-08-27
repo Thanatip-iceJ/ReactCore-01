@@ -36,3 +36,13 @@ body {
 p {
     font-family: 'San-serif';
 }
+
+.btn {
+    padding: 10px 20px;
+    background: orangered;
+    color: white;
+}
+
+.red {
+    color: red;
+}

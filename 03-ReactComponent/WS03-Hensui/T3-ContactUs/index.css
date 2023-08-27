@@ -14,3 +14,22 @@ body {
     height: 100vh;
     font-family: 'urbanist', sans-serif;
 }
+
+.contact {
+    display: flex;
+    gap: 1rem;
+}
+
+.contact input {
+    padding: 10px;
+    border: 1px solid #29005f;
+    border-radius: 4px;
+    width: 443px;
+}
+
+.contact button {
+    padding: 10px 30px;
+    background: #29005f;
+    color: white;
+    border-radius: 4px;
+}

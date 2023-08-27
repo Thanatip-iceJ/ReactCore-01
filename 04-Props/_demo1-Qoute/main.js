@@ -33,6 +33,56 @@ const quotes = [
     },
 ];
 
+const quoteObj = {
+    quote: 'The only sin is ignorance',
+    source: 'Christopher Marlowe',
+
+}
+
+const Card = props => (
+    <div className='card'>
+        <h4>Quote: {props.quote}</h4>
+        <p>Author: {props.author}</p>
+    </div>
+)
+const App = () => (
+    <div className='container'>
+        <div className='card'>
+            <h4>Quote: {quoteObj.quote}</h4>
+            <p>Author: {quoteObj.source}</p>
+        </div>
+        <Card 
+        quote={quoteObj.quote} 
+        author={quoteObj.source}
+        />
+        <Card 
+        quote='Just do it tomorrow'
+        author='me'
+        />
+    </div>
+)
+
+// const MyComponent = (props) => (
+//     <h4>Hello {props.text}</h4>
+// )
+
+// const Button = props => (
+//     <button className='btn'>{props.text}</button>
+// )
+
+// const App = () => (
+//     <div>
+//         <h1 className='red'>Header</h1>
+//         <MyComponent text='React'/>
+//         <MyComponent text='CSS'/>
+//         <MyComponent text='HTML'/>
+//         <MyComponent text='Javascript'/>
+//         <Button text='cancel'/>
+//         <Button text='submit'/>
+//         <Button text='continue'/>
+//     </div>
+// )
+
 // Render
 const domRoot = document.getElementById('root');
 const root = ReactDOM.createRoot(domRoot);
